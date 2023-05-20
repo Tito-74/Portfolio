@@ -5,7 +5,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 .container{
-  width: 100%;
+  /* width: 90%; */
   margin: 0 auto;
   /* padding:2em; */
   /* margin-top: 4em; */
@@ -27,7 +27,7 @@ body{
 
 
 nav{
-  margin: 0;
+  margin: 0 .4em;
   /* font-size: 1.5em; */
   display:flex;
   justify-content: space-between;
@@ -88,7 +88,7 @@ ul li p{
 }
 
 .hero{
-  margin-top: 3em;
+  margin-top: 3em .5em 0 .5em;
   text-align: center;
   position: relative;
 }
@@ -128,7 +128,9 @@ ul li p{
   /* margin-top: 4em; */
 }
 .what-i-do{
-  margin-bottom: 5em;
+  /* margin-bottom: 5em; */
+  margin: .5em .9em 0 .6em ;
+  /* padding: .5em; */
 }
 .what-i-do hr{
   width: 130px;
@@ -142,14 +144,16 @@ ul li p{
 }
 .what-i-do-content{
   background: gray;
-  width: 100%;
-  border: .1em solid black;
+  width: 100%;/* 100% */
+  /* border: .1em solid black; */
   border-radius: .4em;
+  padding: .2em;
   
 }
-.what-i-do-content .text-content{
+.what-i-do-text-content{
   text-align: center;
   margin-bottom: 2em;
+  /* padding: .3em; */
 
 }
 
@@ -162,6 +166,7 @@ ul li p{
   border-radius:.4em;
   color: white;
   text-decoration: none;
+  /* margin-bottom: 5em; */
  
 
 }
@@ -204,6 +209,52 @@ ul li p{
   height: 1px;
   background-color: rgb(234, 7, 7);
   border: none;
+}
+.work-list{
+ 
+  /* display:flex; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.work-list h3{
+  margin: 2em 0;
+  font-weight: 600;
+
+}
+.card{
+  width: 40%;
+  background-size: 150%;
+  border: 1px solid black;
+  height: 200px;
+  border-radius: .5em;
+  display: flex;
+  align-items: end;
+
+}
+.card1{
+  background: url("https://res.cloudinary.com/dlkjbxanc/image/upload/v1681114016/zlekhzsbachtejcucsdx.png")
+
+}
+.card-details{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  transform:800ms;
+  text-align: center;
+  background:rgb(49, 47, 47);
+  opacity: 70%;
+  color:white;
+}
+.card-details a{
+  text-decoration:none;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight:400;
+  color:white;
+}
+.card-details p{
+margin: 0;
 }
 
 

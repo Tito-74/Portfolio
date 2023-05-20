@@ -62,17 +62,17 @@ ul{
   display:none;
 }
 
-ul li{
+nav ul li{
   display:flex;
   
   font-weight: 700;
 
 }
-ul li a{
+nav ul li a{
   text-decoration: none;
   color:black;
 }
-ul li p{
+nav ul li p{
   margin:0;
   line-height:1em;
 }
@@ -159,7 +159,7 @@ ul li p{
   width: 100%;/* 100% */
   /* border: .1em solid black; */
   border-radius: .4em;
-  padding: .2em;
+  padding: .1em;
   
 }
 .what-i-do-text-content{
@@ -242,10 +242,10 @@ ul li p{
 }
 .card{
   /* width: 40%; */
-  background-size: 150%;
+  /* background-size: 150%; */
   /* border: 1px solid black; */
   height: 200px;
-  
+  /* padding: 1em; */
   display: flex;
   align-items: end;
   margin-top: 1em;
@@ -266,14 +266,22 @@ ul li p{
   position: absolute;
   display:flex;
   flex-direction: column;
-  width: 100%;
-  transform:800ms;
+  /* width: 80%; */
+  /* transform:800ms; */
   text-align: center;
-  background:rgb(49, 47, 47);
+  /* background:rgb(49, 47, 47); */
   opacity: 70%;
-  color:white;
+  /* color:white; */
   border-radius: .5em;
-  padding: .4em;
+  /* padding: .4em; */
+  bottom: 0;
+  right: 10%;
+  left: 10%;
+  background-color: black;
+  color: white;
+  padding-top: .5em;
+  /* padding-left: .5em;
+  padding-right: .5em; */
 }
 #card-details a{
   text-decoration:none;
@@ -285,7 +293,7 @@ ul li p{
 .card-details{
   display:flex;
   flex-direction: column;
-  width: 100%;
+  width: 97%;
   transform:800ms;
   text-align: center;
   background:rgb(49, 47, 47);
@@ -309,6 +317,41 @@ margin: 0;
 .h5-resume{
   font-weight: 500;
   font:bold;
+  margin-top: -20px;
+}
+.h5-resume a{
+  text-decoration:none;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight:400;
+  color:white;
+}
+
+.footer{
+  text-align: center;
+}
+.footer p{
+  font-weight: 700;
+  color: rgb(38, 37, 37);
+}
+.social-media a{
+  text-decoration: none;
+  color:gray;
+}
+.footer-link{
+
+  /* text-align: center; */
+  display:flex;
+  justify-content: center;;
+}
+.footer-link ul li{
+  list-style-type: none;
+  
+}
+.footer-link ul li a{
+  text-decoration: none;
+  font-weight: 800;
+  font: bold;
 }
 
 
@@ -318,9 +361,9 @@ margin: 0;
 
 
 
-/* *{
-  border:1px solid green;
-} */
+*{
+  /* border:1px solid green; */
+} 
 
 
 

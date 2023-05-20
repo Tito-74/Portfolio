@@ -1,0 +1,221 @@
+body{
+  margin: 0;
+  width: 100%;
+  /* background-color:rgb(165, 141, 141); */
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  /* padding:2em; */
+  /* margin-top: 4em; */
+  background-color:white;
+  /* border-radius: 0.5em; */
+  display:flex;
+}
+.side-bar{
+  background-color:rgb(231, 161, 161);
+  width: 20%;
+}
+.main{
+  width: 100%;
+/* background-color: rgb(241, 177, 94); */
+}
+
+
+
+
+
+nav{
+  margin: 0;
+  /* font-size: 1.5em; */
+  display:flex;
+  justify-content: space-between;
+  /* position:relative; */
+  margin-top:1em;
+}
+.logo{
+  width: 50px;
+  height:50px;
+}
+ul{
+  display:flex;
+  justify-content: space-between;
+  gap:2em;
+}
+
+.hide-desktop{
+  display:none;
+}
+
+.hide-mobile{
+  display:none;
+}
+
+ul li{
+  display:flex;
+  
+  font-weight: 700;
+
+}
+ul li a{
+  text-decoration: none;
+  color:black;
+}
+ul li p{
+  margin:0;
+  line-height:1em;
+}
+.email-details{
+  /* margin-top: 1em; */
+  justify-content: center;
+  display: flex;
+  gap:3em;
+}
+.email-details svg{
+  margin-right: .2em;
+}
+.email-details a{
+  text-decoration: none;
+  color:black;
+  margin:0;
+  line-height:1em;
+  font-weight: 700;
+}
+
+.menu {
+  /* margin-top: */
+}
+
+.hero{
+  margin-top: 3em;
+  text-align: center;
+  position: relative;
+}
+.hero img{
+  /* width: 60%; */
+  justify-content: center;
+}
+.profile-text img{
+  width:100px;
+  height:90px;
+}
+.profile-text{
+ 
+  text-align: center;
+}
+.profile-text h1{
+  margin:0;
+  font-weight:900;
+  font-size: 3em;
+  font:bold;
+}
+.profile-text h6{
+  margin-top:1em;
+  font-weight:700;
+  font-size: .8em;
+}
+.lets-talk{
+  display: block;
+  margin-top: .5em;
+  /* position:absolute; */
+  /* top:60%; */
+  left:10%;
+}
+.profile-pic{
+  width:300px;
+  height: 250px;
+  /* margin-top: 4em; */
+}
+.what-i-do{
+  margin-bottom: 5em;
+}
+.what-i-do hr{
+  width: 130px;
+  margin: 0;
+  left: 0;
+  /* color:rgb(234, 7, 7); */
+  margin-bottom: 2em;
+  height: 1px;
+  background-color: rgb(234, 7, 7);
+  border: none;
+}
+.what-i-do-content{
+  background: gray;
+  width: 100%;
+  border: .1em solid black;
+  border-radius: .4em;
+  
+}
+.what-i-do-content .text-content{
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+
+#front-end{
+  margin-bottom: 2em;
+}
+.cta-btn{
+  background:rgb(235, 129, 129);
+  padding: .8em;
+  border-radius:.4em;
+  color: white;
+  text-decoration: none;
+ 
+
+}
+.readme{
+  margin-top:4em;
+  width: 80%;
+  margin:0 auto;
+  background: rgb(198, 195, 195);
+  padding:2em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.readme-content{
+  margin-top: 4em;
+  /* margin-left:2em; */
+  gap:.6em;
+  display:flex;
+  flex-direction:column;
+}
+
+.readme-content i{
+  margin-right: .5em;
+}
+.readme-content p{
+  margin:0;
+  padding: 0;
+}
+.readme img{
+  border-radius: 1em;
+  margin-top:1em;
+  /* margin-left:2em; */
+}
+.readme-text-content{
+  /* margin-left:2em; */
+}
+.readme-text-content hr{
+  width: 100px;
+  margin: 0;
+  left: 0;
+  margin-bottom: 2em;
+  height: 1px;
+  background-color: rgb(234, 7, 7);
+  border: none;
+}
+
+
+
+
+
+
+
+
+/* *{
+  border:1px solid green;
+} */
+
+
+

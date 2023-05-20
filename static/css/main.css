@@ -243,9 +243,9 @@ ul li p{
 .card{
   /* width: 40%; */
   background-size: 150%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 200px;
-  border-radius: .5em;
+  
   display: flex;
   align-items: end;
   margin-top: 1em;
@@ -259,6 +259,7 @@ ul li p{
   background-position: center center;
   /* height: 350px; */
   width: 100%;
+  border-radius: .5em;
 
 }
 #card-details{
@@ -271,6 +272,8 @@ ul li p{
   background:rgb(49, 47, 47);
   opacity: 70%;
   color:white;
+  border-radius: .5em;
+  padding: .4em;
 }
 #card-details a{
   text-decoration:none;
@@ -288,6 +291,7 @@ ul li p{
   background:rgb(49, 47, 47);
   opacity: 70%;
   color:white;
+ 
 }
 .card-details a{
   text-decoration:none;
@@ -298,6 +302,13 @@ ul li p{
 }
 .card-details p{
 margin: 0;
+}
+.quiz{
+  margin:2em 0;
+}
+.h5-resume{
+  font-weight: 500;
+  font:bold;
 }
 
 

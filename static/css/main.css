@@ -12,6 +12,7 @@ body{
   background-color:white;
   /* border-radius: 0.5em; */
   display:flex;
+  /* position: relative; */
 }
 .side-bar{
   background-color:rgb(231, 161, 161);
@@ -46,7 +47,7 @@ nav{
   /* height:50px; */
 }
 .side-bar img{
-  width: 30px;
+  width: 45px;
 }
 ul{
   display:flex;
@@ -54,28 +55,13 @@ ul{
   gap:2em;
 }
 
-.hide-desktop{
+/* .hide-desktop{
   display:none;
-}
+} */
 
-.hide-mobile{
-  display:none;
-}
 
-nav ul li{
-  display:flex;
-  
-  font-weight: 700;
 
-}
-nav ul li a{
-  text-decoration: none;
-  color:black;
-}
-nav ul li p{
-  margin:0;
-  line-height:1em;
-}
+
 .email-details{
   /* margin-top: 1em; */
   justify-content: center;
@@ -102,9 +88,11 @@ nav ul li p{
   /* text-align: center; */
   position: relative;
 }
-.hero img{
-  /* width: 60%; */
-  /* justify-content: center; */
+.profile-name h1 {
+  font-size: 1.5rem;
+  font-weight:900;
+  margin: 0;
+  /* font-family: ; */
 }
 .text-center{
   text-align: center;
@@ -113,11 +101,14 @@ nav ul li p{
   width:100px;
   height:90px;
 }
-.talk-wrapper > img {
+.intro-image{
+  margin-top:2em;
+}
+/* .talk-wrapper > img {
   width:50px;
   height:90px;
   
-}
+} */
 .profile-text h1{
   margin:0;
   font-weight:900;
@@ -129,22 +120,11 @@ nav ul li p{
   font-weight:700;
   font-size: .8em;
 }
-.lets-talk{
-  /* display: block; */
-  /* margin-top: .5em; */
-  /* position:absolute; */
-  /* top:60%; */
-  /* left:10%; */
-}
-.prof-pic{
-  /* border-radius: 50%; */
-  /* border: 1px solid black; */
-  /* background:green; */
-}
+
 .profile-pic{
   margin: 0 auto;
   /* text-align: center; */
-  border-radius: 50%;
+  /* border-radius: 50%; */
 
 }
 .profile-pic{
@@ -160,8 +140,12 @@ nav ul li p{
   margin: .5em .8em 4em .3em ;
   /* padding: .5em; */
 }
+.s-offers{
+  font-size: 1.5em;
+  font-weight: 500;
+}
 .what-i-do hr{
-  width: 130px;
+  width: 160px;
   margin: 0;
   left: 0;
   /* color:rgb(234, 7, 7); */
@@ -183,6 +167,10 @@ nav ul li p{
   margin-bottom: 2em;
   /* padding: .3em; */
 
+}
+.what-i-do-text-content h5{
+  font-size: 1.2rem;
+  font-weight:700;
 }
 
 #front-end{
@@ -339,6 +327,7 @@ margin: 0;
   flex-direction: column;
   width:100%;
   margin-top: 2em;
+  /* border:1px solid black; */
   /* padding:.5em;  */
   /* gap:1em; */
   /* justify-content: space-between; */
@@ -364,11 +353,12 @@ margin: 0;
   font-weight:400;
   color:black;
   margin:0;
+  padding: 1em;
   background: green;
   border-radius: .5em;
 }
 
-.footer{
+.footer-intro-connection{
   text-align: center;
 }
 .footer p{
@@ -394,16 +384,219 @@ margin: 0;
   color:black;
 }
 
+/* handling nav issue */
+
+nav > ul{
+  display:flex;
+  /* flex-direction: column; */
+  font-weight: 700;
+  margin:0;
+
+}
+nav ul li{
+  margin:0;
+  list-style-type: none;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color:black;
+}
+/* nav ul li p{
+  margin:0;
+  line-height:1em;
+} */
+
+
+/* media querries below 765px */
+@media only screen and (max-width: 765px) {
+  .main{
+    background-color: rgb(42, 114, 138);
+  }
+  .hide-mobile{
+    display:none;
+  }
+  
+}
+
+@media only screen and (max-width: 380px) {
+  .talk-wrapper{
+    /* margin-top: 2em; */
+    text-align: center;
+  }
+  .footer-nav{
+    text-align: center;
+  }
+}
+
+
 
 
 
 /* media querries 412px */
-/* @media only screen and (min-width: 412px){
+ @media only screen and (min-width: 765px){ 
+  .side-bar{
+    background: green;
+    width: 15%;
+    text-align: center;
+    position: relative;
+  }
+  .logo{
+    position: relative;
+  }
   .main{
     background:blue;
+    padding: 2em;
+    -webkit-box-shadow: 0px 15px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 5px 0px rgba(0,0,0,0.75);
+    /* position: relative; */
+    /* margin-bottom:6em; */
 
   }
-  .card{
+  .hide-desktop{
+    display:none;
+  }
+  nav{
+    margin:0 2em 0 2em;
+  }
+
+  .hero{
+    display:flex;
+  }
+  .hero-part-1{
+    max-width:45%;
+    margin: 3em .5em 0 .5em;
+    text-align: left;
+  }
+  .text-center{
+    text-align: left;
+  }
+  .intro-image{
+    margin-left: 1em;
+  }
+ 
+  .profile-name h1 {
+    font-size: 3.052rem;
+    font-weight:900;
+    margin: 0;
+    /* font-family: ; */
+  }
+   
+  .hero-part-1 h6{
+    font-size: 1rem;
+    margin: 0;
+  }
+  .talk-wrapper{
+    margin-top: 2em;
+    text-align: center;
+  }
+  .social-media-part{
+    position: absolute;
+    display:flex;
+    gap:2em;
+    flex-direction: column;
+    top:10%;
+    margin-left: 2em;
+
+  }
+  .social-media-part i{
+    font-size: 2em;
+  }
+
+  .profile-pic{
+    text-align: left;
+    padding:1em;
+    margin: 0;
+  }
+  .profile-pic img{
+    width:350px;
+    margin-top: 8em;
+  }
+  .what-i-do h1{
+    font-size: 2rem;
+    font-weight:bold;
+
+  }
+  .what-i-do-text-content{
+    padding: 0 1.5em 0 1.5em;
+
+  }
+  .what-i-do-text-content p{
+    font-size: 1rem;
+  }
+   .gif-content{
+    display:none;
+  }
+
+  .readme-part-1{
+    display:flex;
+  }
+  .readme img{
+    width: 300px;
+  }
+  .readme-content{
+    margin-left:.5em;
+  }
+  .readme-text-content h4{
+     font-size: 1rem;
+     font-weight: 600;
+     text-transform: uppercase;
+  }
+  .my-works h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .my-works p{
+    text-transform:capitalize;
+    font-size: 1.5rem;
+  }
+  .my-works h3{
+    text-transform:capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+  }
+  .quiz{
+    margin-top:2em;
+    flex-direction: row;
+  }
+  .quiz-quiz{
+    font-size: 1rem;
+    width: 50%;
+  }
+  .h5-resume{
+    margin-top:4em;
+  }
+  .footer-intro-connection{
+    margin-top:4em;
+  }
+ .footer-nav{
+  display:flex;
+  justify-content:space-between;
+ }
+ .footer-logo{
+  width: 50px;
+ }
+ /* .my-works{
+   border:1px solid green;
+ } */
+ /* .footer-nav{
+  position: absolute;
+  bottom:0;
+  text-align: center;
+ }
+  */
+ 
+ 
+
+  /* .nav-links{
+    display:flex;
+    flex-direction:row;
+    background-color :white;
+  } */
+  /* .card{
     margin-top: 3em; 
   }
   .hero{
@@ -416,8 +609,8 @@ margin: 0;
     left:70%;
     top: 50%;
     margin-top: -25px;
-  }
-} */
+  } */
+} 
 /* media querries 650px */
 /* @media only screen and (min-width: 650px){
   .main{

@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html')
+
+
+def comments(request):
+    return render(request, 'comments.html')

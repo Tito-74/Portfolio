@@ -419,24 +419,31 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(62,144,38,0.983630952
   /* color:black;  */
 }
 
-/* handling nav issue */
 
 nav > ul{
-  display:flex;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: row;
   font-weight: 700;
   margin:0;
 
 }
+.nav-links{
+  display:block;
+  /* margin-right: 0; */
+
+  /* flex-direction: row; */
+}
 nav ul li{
-  margin:0;
+  margin-bottom:1em;
   list-style-type: none;
+
 
 }
 nav ul li a{
   text-decoration: none;
-  /* color:black;  */
+  /* color:white;  */
 }
+
 
 
 
@@ -457,6 +464,28 @@ nav ul li a{
     color:white;
    
    }
+
+nav > ul{
+  position:fixed;
+  width: 50%;
+  height: 200px;
+  top:0;
+  right: 0;
+  margin:0;
+  text-align: left;
+  background:rgb(36,41,44);
+  /* height:100%; */
+  z-index: 7;
+  padding-top: 1em;
+  /* flex-direction: column; */
+  /* font-weight: 700;
+  margin:0; */
+
+}
+nav ul li a{
+  /* text-decoration: none; */
+  color:white; 
+}
  
   
 }
@@ -500,11 +529,28 @@ nav ul li a{
     /* margin-bottom:6em; */
 
   }
+  
   .hide-desktop{
     display:none;
   }
   nav{
     margin:0 2em 0 2em;
+  }
+  nav > ul{
+    display: flex !important;
+    /* flex-direction: row; */
+    font-weight: 700;
+    margin:0;
+  }
+  nav ul li{
+    margin-bottom:.8em;
+    list-style-type: none;
+  
+  
+  }
+  nav ul li a{
+    text-decoration: none;
+    color:black; 
   }
 
   .hero{
@@ -644,6 +690,7 @@ nav ul li a{
  .footer-logo{
   width: 50px;
  }
+}
 
 
  @media only screen and (min-width: 768px){ 
@@ -661,19 +708,11 @@ nav ul li a{
    
    }
  }
- /* @media only screen and (max-width: 1024px) {
 
 
-.main{
-  background:green;
-} */
+/* @media only screen and (min-width: 1024px){ 
 
- 
-/* } */
-
-@media only screen and (min-width: 1024px){ 
-
- }
+ } */
 
  @media only screen and (min-width: 1024px){ 
   .gif-content{ 
@@ -701,61 +740,3 @@ nav ul li a{
  .a-dark-mode{
   color:white;
  }
- /* .my-works{
-   border:1px solid green;
- } */
- /* .footer-nav{
-  position: absolute;
-  bottom:0;
-  text-align: center;
- }
-  */
- 
- 
-
-  /* .nav-links{
-    display:flex;
-    flex-direction:row;
-    background-color :white;
-  } */
-  /* .card{
-    margin-top: 3em; 
-  }
-  .hero{
-    margin: 0 auto;
-    display:relative;
-  }
-  .talk-wrapper{
-    margin-left: 0;
-    display: absolute; 
-    left:70%;
-    top: 50%;
-    margin-top: -25px;
-  } */
-} 
-/* media querries 650px */
-/* @media only screen and (min-width: 650px){
-  .main{
-    background:green;
-
-  }
-  .card{
-    margin-top: 3em; 
-  }
-} */
-
-
-
-
-
-
-
-
-
-
-*{
-  /* border:1px solid green; */
-} 
-
-
-

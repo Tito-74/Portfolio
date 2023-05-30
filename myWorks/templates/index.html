@@ -37,7 +37,9 @@
 
           </div>
 
-          <ul class="nav-links hide-mobile">
+          <ul class="nav-links hide-mobile" id="nav-links">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1685392723/exit_bcxxab.svg" alt=""></li>
             <li class="hide-desktop">
               <a href="#">
                 <i class="bi bi-envelope"></i>
@@ -56,7 +58,7 @@
           </ul>
 
           <a href="#" class="menu hide-desktop">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684480354/ham_b31do7.svg" alt="toggle menu" class="menu" id="menu">
+            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684480354/ham_b31do7.svg" alt="toggle menu" id="menu">
           </a>
         </nav>
       
@@ -71,7 +73,7 @@
           <h6 class="text-center">Software Engineer</h6>
           <p class="text-center">I'm from Nairobi, Kenya.I have experience in building complex application with cutting-edge technologies </p>
           <div class="talk-wrapper">
-            <a href="#">
+            <a href="comments/">
               <img width= "100" src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684505774/images_ebomgc.png" alt="lets-talk">
             </a>
           </div>
@@ -220,20 +222,43 @@
       showCursor: false
     });
 
-
+    // var aTag = document.querySelector('a');
      document.getElementById('dark-modes').onclick = function(){
      console.log('clicked')
      body = document.querySelector('body');
      body.className = 'dark-mode';
-    //  links = document.querySelector('.darkMode');
-    //  linksOne = document.querySelector('.darkMode-1');
-    //  linksTwo = document.querySelector('.darkMode-2');
-    //  links.className = 'a-dark-mode';
-    //  linksOne.className = 'a-dark-mode';
-    //  linksTwo.className = 'a-dark-mode';
-    //  bar.classList.replace('side-bar', 'linkss'); 
-     
+    //  aTag.className = 'dark-mode';
+    
+      
+
      }
+     var nav = document.getElementById("nav-links");
+     var exit = document.getElementById("exit");
+     document.getElementById("menu").onclick = function(e){
+      nav.classList.toggle("hide-mobile")
+      // menu= document.querySelector('menu');
+      // menu.className = 'hide-desktop';
+  //     console.log("hey tito am here")
+      e.preventDefault();
+      };
+      document.getElementById("exit").onclick = function(e){
+        nav.classList.add("hide-mobile")
+        e.preventDefault();
+      }
+  //     var menu = document.getElementById("menu")
+  //     var nav = document.getElementById("nav-links");
+  //     var exit = document.getElementById("exit");
+
+  //     menu.addEventListener("click", function(e){
+  //     nav.classList.toggle("hide-mobile")
+  //     console.log("hey tito am here")
+  //     e.preventDefault();
+  //     })
+
+  //     exit.addEventListener("click", function(e){
+  //       nav.classList.add("hide-mobile")
+  //       e.preventDefault();
+  // })
   </script>
 
 </body>

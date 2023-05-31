@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  <div class="container">
+  <div class="message-box">
     <h2>message</h2>
     <form action="">
-      <label for="full-name">Full Name</label>
-      <input type="text">
-      <label for="email">E-mail</label>
-      <input type="email">
-      <label for="full-name">Full Name</label>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <input type="text" name="full-name" placeholder="Full Name ....">
+     
+      <input type="email" name="email" placeholder="E-mail address ...">
+      
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your Message"></textarea>
+      <button type="submit">Submit</button>
 
     </form>
   </div>

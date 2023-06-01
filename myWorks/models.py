@@ -12,7 +12,7 @@ class Message(models.Model):
 class Works(models.Model):
     name = models.CharField(max_length=100,null=False, blank=False)
     technologies = models.CharField(max_length=200,null=False, blank=False)
-    image = CloudinaryField('images', default=None)
+    image = CloudinaryField('images')
 
     def __str__(self):
         return self.name

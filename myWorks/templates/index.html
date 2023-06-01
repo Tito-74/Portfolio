@@ -20,14 +20,14 @@
       <div class="social-media-part hide-mobile">
         <a class="darkMode" href="#"><i class="bi bi-twitter"></i></a>
         <a class="darkMode1-" href="#"><i class="bi bi-github"></i></a>
-        <a class="darkMode-2" href="#"><i class="bi bi-kaggle"></i></a>
+        <!-- <a class="darkMode-2" href="#"><i class="bi bi-kaggle"></i></a> -->
       </div> 
     </div>
     <div class="main">
       <header>
         <nav> 
           <div class="email-details  ">
-            <a class= "hide-mobile" href="#">
+            <a class= "hide-mobile dark-email" href="#">
               <i class="bi bi-envelope"></i>
               kipkirui133@gmail.com
             </a>
@@ -145,22 +145,24 @@
         <hr>
         <h3>Web Applications</h3>
         <div class="work-list"> 
+          {% for work in works %}
           <div class="card card1">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1681114016/zlekhzsbachtejcucsdx.png" alt="project-1">
+            <img src="{{work.image.url}}" alt="project-1">
+            <div id="card-details">
+              <a href="#">{{work.name}}</a>
+              <p>{{work.technologies}}</p>
+            </div>
+          </div>
+          {% endfor %}
+          <div class="card card1">
+            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1685558399/yqjgklb5e5z5wgnd6zhq.png" alt="project-1">
             <div id="card-details">
               <a href="#">Fauxica</a>
               <p>HTML, CSS, JavaScript</p>
             </div>
           </div>
           <div class="card card1">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1681114016/zlekhzsbachtejcucsdx.png" alt="project-1">
-            <div id="card-details">
-              <a href="#">Fauxica</a>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
-          </div>
-          <div class="card card1">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1681114016/zlekhzsbachtejcucsdx.png" alt="project-1">
+            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1685560106/tju0su1wgv6td6as1gub.png" alt="project-1">
             <div id="card-details">
               <a href="#">Fauxica</a>
               <p>HTML, CSS, JavaScript</p>
@@ -181,7 +183,7 @@
         </div>
 
       </section>
-
+          
       <section class="footer">
         <div class="footer-intro-connection"> 
         <h3>Stay Connected</h3>
@@ -198,7 +200,7 @@
         <img class="footer-logo" width="100" src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684153809/download_vmjdgi.png" alt="logo"> 
         <div class="footer-link">
           <ul>
-            <li><a href="#">Works</a></li>
+            <li><a href="#my-works">Works</a></li>
             <li><a href="#">Resume</a></li>
           </ul>
         </div>
@@ -227,6 +229,7 @@
      console.log('clicked')
      body = document.querySelector('body');
      body.className = 'dark-mode';
+    //  aTag = document.querySelector('dark-email');
     //  aTag.className = 'dark-mode';
     
       

@@ -1,9 +1,15 @@
 from django.shortcuts import render
+from .models import Works
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    works = Works.objects.all()
+    context = {
+        "works": works,
+    }
+    print("works data", works)
+    return render(request, 'index.html', context)
 
 
 def comments(request):

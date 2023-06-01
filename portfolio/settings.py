@@ -20,10 +20,15 @@ import cloudinary.api
 
 
 cloudinary.config( 
-  cloud_name = os.environ.get("Cloud_Name"), 
-  api_key = os.environ.get("Api_Key"), 
-  api_secret = os.environ.get("Api_Secret"),
+  cloud_name = "dlkjbxanc",
+#   os.environ.get("Cloud_Name"), 
+  api_key ="961415895693542",
+    # os.environ.get("Api_Key"), 
+  api_secret = "t2vHGmNc-iHpdqX4rH2_T1miAME",
+#   os.environ.get("Api_Secret"),
 )
+
+print("cloud name", os.environ.get("Cloud_Name"))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -51,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myWorks',
+    "cloudinary",
 ]
 
 MIDDLEWARE = [

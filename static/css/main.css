@@ -557,9 +557,10 @@ nav ul li a{
     display:flex;
   }
   .hero-part-1{
-    max-width:45%;
+    max-width:30%;
     margin: 3em .5em 0 .5em;
     text-align: left;
+    padding:.5em;
   }
   .text-center{
     text-align: left;
@@ -573,7 +574,7 @@ nav ul li a{
     font-size: 3.052rem;
     font-weight:900;
     margin: 0;
-    width: 50%;
+    width: 80%;
     /* font-family: ; */
   }
    
@@ -729,7 +730,7 @@ nav ul li a{
 
  .dark-mode{
   background:rgb(35, 30, 30);
-  color:white;
+  color:white !important;
  
  }
  .linkss{
@@ -739,4 +740,8 @@ nav ul li a{
 
  .a-dark-mode{
   color:white;
+ }
+
+ *{
+  /* border: 1px solid green; */
  }

@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
   <title>Tito</title>
 </head>
 <body>
@@ -18,22 +21,23 @@
     <div class="side-bar">
       <img class="logo" width="100" src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684153809/download_vmjdgi.png" alt="logo">
       <div class="social-media-part hide-mobile">
-        <a class="darkMode" href="#"><i class="bi bi-twitter"></i></a>
-        <a class="darkMode1-" href="#"><i class="bi bi-github"></i></a>
-        <!-- <a class="darkMode-2" href="#"><i class="bi bi-kaggle"></i></a> -->
+        <button class="nav-btn" id="nav-btn" onclick="window.location.href = 'https://twitter.com/TheAnalyst_Tito';"><i class="bi bi-twitter"></i></button>
+        <button class="nav-btn" id="nav-btn" onclick="window.location.href = 'https://github.com/Tito-74';"><i class="bi bi-github"></i></button>
+   
       </div> 
     </div>
     <div class="main">
       <header>
         <nav> 
-          <div class="email-details  ">
-            <a class= "hide-mobile dark-email" href="#">
-              <i class="bi bi-envelope"></i>
-              kipkirui133@gmail.com
-            </a>
+          <div class="email-details">
+            
+              <button class="nav-btn hide-mobile dark-email" id="nav-btn" onclick="window.location.href = '#my-works';">
+                <i class="bi bi-envelope"></i>
+                kipkirui133@gmail.com</button>
 
-            <a href="#" id="dark-modes"><i class="bi bi-brightness-high"></i></a>
-
+            <button class="nav-btn dark-email" id="btn"  onclick="change()">
+              <i class="bi bi-moon-stars"></i>
+            </button>
 
           </div>
 
@@ -41,24 +45,26 @@
             <li id="exit" class="exit-btn hide-desktop">
               <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1685392723/exit_bcxxab.svg" alt=""></li>
             <li class="hide-desktop">
-              <a href="#">
-                <i class="bi bi-envelope"></i>
-              Email</a>
+              
+              <i class="bi bi-envelope"></i>
+              <button class="nav-btn" onclick="window.location.href = '#my-works';">Email</button>
+              
             </li>
-            <li><a href="#my-works"> 
+            
+            <li>
               <i class="bi bi-file-earmark-check-fill"></i>
-            Works</a>
+              <button class="nav-btn" onclick="window.location.href = '#my-works';"> Works</button>
           </li>
             <li>
-              <a href="#">
                 <i class="bi bi-file-person-fill"></i>
-              Resume</a>
+              
+              <button class="nav-btn" onclick="window.location.href = '#';"> Resume</button>
             </li>
             
           </ul>
 
           <a href="#" class="menu hide-desktop">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684480354/ham_b31do7.svg" alt="toggle menu" id="menu">
+            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684480354/ham_b31do7.svg" alt="toggle menu"  id="menu">
           </a>
         </nav>
       
@@ -95,11 +101,11 @@
           <div class="what-i-do-text-content">
             <div id="back-end">
               <h5>Backend App</h5>
-              <p>Lorem ipsum dolor sit aposition: relative;met consectetur adipisicing elit. Nemo sed vel a eaque reprehenderit dicta laudantium animi rerum reiciendis! Tenetur delectus omnis consectetur velit magni dolorum blanditiis dolor similique fugit.</p>
+              <p>Building scalable and maintainable server appliation using cutting-edge technologies such as Django, Golang , Postgres DB , Docker and Azure.</p>
             </div>
             <div id="front-end">
               <h5>Frontend App</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed vel a eaque reprehenderit dicta laudantium animi rerum reiciendis! Tenetur delectus omnis consectetur velit magni dolorum blanditiis dolor similique fugit.</p>
+              <p>Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices for SEO optimisation.Use modern tech such as Angular, boostrap CSS and Javascript </p>
             </div>
             <a href="#my-works" class="btn cta-btn">
               See my Work
@@ -118,31 +124,36 @@
             Building Techsyiq.com
           </span>
           <span><i class="bi bi-people-fill"></i>Scaling and improving on dawascope.co.ke</span>
-          <span><i class="bi bi-tree-fill"></i>Learning Kafka</span>
+          <span><i class="bi bi-tree-fill"></i>Learning Kafka and  advance Angular </span>
           <span><i class="bi bi-controller"></i>Playing Fifa</span>
           
           
           
           <p><strong> Fun Fact:
           </strong>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quidem.</p>
+          I am fascinated by travel because I learn about new cultures and meet people. 
+          </p>
         </div>
         </div>
         <div class="readme-text-content">
           <h4>Readme</h4>
           <hr>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facere harum odio libero officiis, accusamus adipisci quos a nemo vel, soluta repellendus commodi dicta voluptas, et earum. 
+            I am a software developer with more than two years of building scalable products.
           </p>
-          <p> Omnis facilis voluptate rem expedita quibusdam ipsam provident quod in, temporibus magnam similique ad magni exercitationem nihil cumque beatae itaque numquam voluptatem amet odit harum quos? Cum quis placeat ullam itaque praesentium hic nulla obcaecati perferendis provident aliquam sequi culpa, magni, consequuntur cumque asperiores,</p>
-          <p>voluptatum neque labore earum suscipit explicabo! Recusandae vero quas architecto laborum libero ullam beatae ad ut asperiores, voluptatem quasi quibusdam velit nulla dignissimos incidunt quam illo nobis sequi porro?</p>
+          <p>I have participated in a number of tech programs, where I acquired  technical and soft skills. I also acquired a high level programming skills from Moringa school and online platform like Udemy and Pluralsight. I am a self motivated developer with a strong discipline to learn, improve and evolve.</p>
+          <p>
+          When I'm not coding, I either watch movies, play video games or traveling. Other times I am learning new languages or Frameworks.  
+          </p>
+          <p>
+            Currently, I am working as Backend Engineer at <a href="https://dawascope.com/">Dawascope Technologies</a> 
+          </p>
         </div>
 
       </section> 
       <section class="my-works" id="my-works">
         <h1>My Works</h1>
         <p>Some of my Projects</p>
-        <hr>
         <h3>Web Applications</h3>
         <div class="work-list"> 
           {% for work in works %}
@@ -154,28 +165,7 @@
             </div>
           </div>
           {% endfor %}
-          <div class="card card1">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1685558399/yqjgklb5e5z5wgnd6zhq.png" alt="project-1">
-            <div id="card-details">
-              <a href="#">Fauxica</a>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
-          </div>
-          <div class="card card1">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1685560106/tju0su1wgv6td6as1gub.png" alt="project-1">
-            <div id="card-details">
-              <a href="#">Fauxica</a>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
-          </div>
-          <div class="card card1">
-            <img src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1681114016/zlekhzsbachtejcucsdx.png" alt="project-1">
-            <div id="card-details">
-              <a href="#">Fauxica</a>
-              <p>HTML, CSS, JavaScript</p>
-            </div>
-          </div>
-        </div>
+          
         <div class="quiz">
           <p class="quiz-quiz">Wants to know about my profession? Check my resume <span>&#128073;&#127998;</span></p>
          
@@ -190,18 +180,20 @@
         <span>Nairobi, Kenya </span>
         <p>kipkirui133@gmail.com</p>
         <div class="social-media">
-          <a href="#"><i class="bi bi-twitter"></i>
-          </a>
-          <a href="#"><i class="bi bi-github"></i>
-          </a>
+          <button class="nav-btn" id="nav-btn" onclick="window.location.href = 'https://twitter.com/TheAnalyst_Tito';"><i class="bi bi-twitter"></i></button>
+          <button class="nav-btn" id="nav-btn" onclick="window.location.href = 'https://github.com/Tito-74';"><i class="bi bi-github"></i></button>
         </div>
       </div>
       <div class="footer-nav">
         <img class="footer-logo" width="100" src="https://res.cloudinary.com/dlkjbxanc/image/upload/v1684153809/download_vmjdgi.png" alt="logo"> 
         <div class="footer-link">
           <ul>
-            <li><a href="#my-works">Works</a></li>
-            <li><a href="#">Resume</a></li>
+            <li>
+              <button class="nav-btn" id="nav-btn" onclick="window.location.href = '#my-works';"> Works</button>
+          </li>
+            <li>
+              <button class="nav-btn" id="nav-btn" onclick="window.location.href = '#';"> Resume</button>
+            </li>
           </ul>
         </div>
         <p>&copy;2023 Tito, All Rights Reserved</p>
@@ -224,44 +216,36 @@
       showCursor: false
     });
 
-    // var aTag = document.querySelector('a');
-     document.getElementById('dark-modes').onclick = function(){
-     console.log('clicked')
-     body = document.querySelector('body');
-     body.className = 'dark-mode';
-    //  aTag = document.querySelector('dark-email');
-    //  aTag.className = 'dark-mode';
-    
-      
+    function change() {
+          let btnText = document.getElementById("btn");
+            let btn = document.body;
+            let linkButton = document.getElementsByClassName("nav-btn")
+               btn.classList.toggle("dark-mode");
+               if (btnText.innerHTML === '<i class="bi bi-brightness-high"></i>') {
+                for(i = 0; i < linkButton.length; i++) {
+                    linkButton[i].style.color = 'black';
+                    }
+                
+                  btnText.innerHTML = '<i class="bi bi-moon-stars"></i>';
+               } else {
+                for(i = 0; i < linkButton.length; i++) {
+                    linkButton[i].style.color = 'white';
+                    }
+                  btnText.innerHTML = '<i class="bi bi-brightness-high"></i>';
+            }}
 
-     }
+
      var nav = document.getElementById("nav-links");
      var exit = document.getElementById("exit");
      document.getElementById("menu").onclick = function(e){
       nav.classList.toggle("hide-mobile")
-      // menu= document.querySelector('menu');
-      // menu.className = 'hide-desktop';
-  //     console.log("hey tito am here")
       e.preventDefault();
       };
       document.getElementById("exit").onclick = function(e){
         nav.classList.add("hide-mobile")
         e.preventDefault();
       }
-  //     var menu = document.getElementById("menu")
-  //     var nav = document.getElementById("nav-links");
-  //     var exit = document.getElementById("exit");
-
-  //     menu.addEventListener("click", function(e){
-  //     nav.classList.toggle("hide-mobile")
-  //     console.log("hey tito am here")
-  //     e.preventDefault();
-  //     })
-
-  //     exit.addEventListener("click", function(e){
-  //       nav.classList.add("hide-mobile")
-  //       e.preventDefault();
-  // })
+  
   </script>
 
 </body>
